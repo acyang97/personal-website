@@ -13,6 +13,7 @@ export default makeStyles((theme) => ({
     position: "relative",
     textAlign: "center",
     overflow: "hidden",
+    objectFit: "cover",
     "@media (max-width: 480px)": {
       minHeight: "100vh",
       height: "100vh !important",
@@ -28,7 +29,7 @@ export default makeStyles((theme) => ({
   profileImage: {
     width: "300px",
     "@media (max-width: 480px)": {
-      width: "200px",
+      width: "150px",
     },
   },
   aboutMeTopContainer: {
