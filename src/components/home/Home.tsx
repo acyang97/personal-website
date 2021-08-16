@@ -32,6 +32,7 @@ const Home: React.FC = () => {
             internship opportunities!
           </Typography>
         </div>
+        <p>&nbsp;</p>
       </div>
     </>
   );

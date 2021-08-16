@@ -2,22 +2,22 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
   homeContainer: {
-    alignItems: "center",
+    // alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#BEE3DB",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    borderTop: "0",
-    minHeight: "110vh",
-    height: "110vh !important",
-    position: "relative",
-    textAlign: "center",
-    overflow: "hidden",
-    objectFit: "cover",
-    "@media (max-width: 480px)": {
-      minHeight: "100vh",
-      height: "100vh !important",
-    },
+    // backgroundPosition: "center",
+    // backgroundSize: "cover",
+    // borderTop: "0",
+    // minHeight: "110vh",
+    // height: "110vh !important",
+    // position: "relative",
+    // textAlign: "center",
+    // overflow: "hidden",
+    // objectFit: "cover",
+    // "@media (max-width: 480px)": {
+    //   minHeight: "100vh",
+    //   height: "100vh !important",
+    // },
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -33,9 +33,10 @@ export default makeStyles((theme) => ({
     },
   },
   aboutMeTopContainer: {
-    marginTop: "100px",
-    marginBottom: "25px",
+    paddingTop: "100px",
+    paddingBottom: "25px",
     display: "flex",
+    backgroundColor: "#BEE3DB",
     justifyContent: "center",
     marginLeft: "200px",
     marginRight: "200px",
@@ -58,7 +59,7 @@ export default makeStyles((theme) => ({
     },
   },
   aboutMeContainer: {
-    marginTop: "50px",
+    paddingTop: "50px",
     display: "flex",
     justifyContent: "center",
     marginLeft: "200px",
