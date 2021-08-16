@@ -5,12 +5,10 @@ import {
   Button,
   IconButton,
   Drawer,
-  Link,
   MenuItem,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { useState, useEffect } from "react";
-import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import useStyles from "./styles";
 
