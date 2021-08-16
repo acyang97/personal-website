@@ -11,24 +11,32 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import { useState, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import useStyles from "./styles";
 
 const headersData = [
   {
+    label: "Home",
+    text: "home",
+  },
+  {
     label: "Skills",
-    href: "/skills",
+    text: "skills",
   },
   {
     label: "Experience",
-    href: "/experience",
+    text: "experience",
   },
-  {
-    label: "Education",
-    href: "/education",
-  },
+  // {
+  //   label: "Education",
+  //   href: "/education",
+  //   id: 3,
+  //   text: 'education',
+  //   url: '#education',
+  // },
   {
     label: "Projects",
-    href: "/projects",
+    text: "projects",
   },
 ];
 
@@ -103,19 +111,21 @@ export default function Header() {
   };
 
   const getDrawerChoices = () => {
-    return headersData.map(({ label, href }) => {
+    return headersData.map(({ label, text }) => {
       return (
-        <Link
+        <ScrollLink
           {...{
-            component: RouterLink,
-            to: href,
+            component: ScrollLink,
+            to: text,
+            spy: true,
+            smooth: true,
             color: "inherit",
             style: { textDecoration: "none" },
-            key: label,
+            keyScrollLink: label,
           }}
         >
           <MenuItem>{label}</MenuItem>
-        </Link>
+        </ScrollLink>
       );
     });
   };
@@ -127,15 +137,17 @@ export default function Header() {
   );
 
   const getMenuButtons = () => {
-    return headersData.map(({ label, href }) => {
+    return headersData.map(({ label, text }) => {
       return (
         <Button
           {...{
-            key: label,
+            component: ScrollLink,
+            to: text,
+            spy: true,
+            smooth: true,
             color: "inherit",
-            to: href,
-            component: RouterLink,
-            className: classes.menuButton,
+            style: { textDecoration: "none" },
+            keyScrollLink: label,
           }}
         >
           {label}

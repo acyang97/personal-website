@@ -7,10 +7,18 @@ import Skills from "./skills/Skills";
 const Main = () => {
   return (
     <>
-      <Home />
-      <Skills />
-      <Experience />
-      <Projects />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
       <Contact />
     </>
   );

@@ -19,6 +19,10 @@ export default makeStyles((theme) => ({
     backgroundColor: "#FAF9F9",
     marginLeft: "150px",
     marginRight: "150px",
+    "@media (max-width: 600px)": {
+      marginLeft: "25px",
+      marginRight: "25px",
+    },
     "@media (max-width: 480px)": {
       marginLeft: "25px",
       marginRight: "25px",
