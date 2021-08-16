@@ -29,7 +29,8 @@ export default makeStyles((theme) => ({
   profileImage: {
     width: "300px",
     "@media (max-width: 480px)": {
-      width: "150px",
+      width: "200px",
+      height: "200px",
     },
   },
   aboutMeTopContainer: {
