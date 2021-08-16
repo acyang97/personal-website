@@ -1,3 +1,4 @@
+import Contact from "./contact/Contact";
 import Experience from "./experience/Experience";
 import Home from "./home/Home";
 import Projects from "./projects/Projects";
@@ -10,6 +11,7 @@ const Main = () => {
       <Skills />
       <Experience />
       <Projects />
+      <Contact />
     </>
   );
 };

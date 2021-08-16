@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
           />
         ))}
       </div>
-      <p>&nbsp;</p>
+      <p style={{ margin: 0 }}>&nbsp;</p>
     </div>
   );
 };
