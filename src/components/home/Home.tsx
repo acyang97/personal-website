@@ -16,7 +16,11 @@ const Home: React.FC = () => {
           </Typography>
         </div>
         <div className={classes.profileImageContainer}>
-          <img src={profilePhoto} className={classes.profileImage} />
+          <img
+            src={profilePhoto}
+            className={classes.profileImage}
+            alt="profile"
+          />
         </div>
         <div className={classes.aboutMeContainer}>
           <Typography align="center" className={classes.aboutMeText}>

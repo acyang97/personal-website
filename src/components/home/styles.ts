@@ -1,17 +1,22 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
-  paper: {
-    padding: theme.spacing(2),
-  },
   homeContainer: {
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor: "#BEE3DB",
-    minHeight: "100%",
-    width: "100%",
-    height: "auto",
-    position: "fixed",
-    top: "0",
-    left: "0",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    borderTop: "0",
+    minHeight: "110vh",
+    height: "110vh !important",
+    position: "relative",
+    textAlign: "center",
+    overflow: "hidden",
+    "@media (max-width: 480px)": {
+      minHeight: "100vh",
+      height: "100vh !important",
+    },
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -27,8 +32,8 @@ export default makeStyles((theme) => ({
     },
   },
   aboutMeTopContainer: {
-    marginTop: "125px",
-    marginBottom: "50px",
+    marginTop: "100px",
+    marginBottom: "25px",
     display: "flex",
     justifyContent: "center",
     marginLeft: "200px",

@@ -33,7 +33,6 @@ const headersData = [
 ];
 
 export default function Header() {
-  const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
   const classes = useStyles();
 
   const [state, setState] = useState({
