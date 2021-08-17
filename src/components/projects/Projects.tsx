@@ -6,14 +6,14 @@ import montageImage from "../../assets/photos/projects/montage-pic.png";
 import petCaringImage from "../../assets/photos/projects/pet-caring.jpeg";
 import dueQuestImage from "../../assets/photos/projects/duequest.jpeg";
 
-interface IExperience {
+interface IProject {
   img: string;
   cardTitle: string;
   cardDateDetails: string;
   cardDescription: string[];
   urlLink: string;
 }
-const projectsData: IExperience[] = [
+const projectsData: IProject[] = [
   {
     img: montageImage,
     cardTitle: "Montage 2021 Website",

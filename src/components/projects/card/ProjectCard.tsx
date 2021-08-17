@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Typography, Paper, Button } from "@material-ui/core";
 import useStyles from "./styles";
 
-interface ExperienceCardProps {
+interface ProjectCardProps {
   img: string;
   cardTitle: string;
   cardDateDetails: string;
@@ -10,7 +10,7 @@ interface ExperienceCardProps {
   urlLink: string;
 }
 
-const ProjectCard: React.FC<ExperienceCardProps> = ({
+const ProjectCard: React.FC<ProjectCardProps> = ({
   img,
   cardTitle,
   cardDateDetails,
