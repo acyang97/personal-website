@@ -26,7 +26,7 @@ const Home: React.FC = () => {
           <Typography align="center" className={classes.aboutMeText}>
             My name is Chun Yang, a final year Applied Mathematics student (Yes,
             Math) from NUS, minoring in Computer Science and Economics,
-            graduating in May 2022, aspiring to be a software engineer I have
+            graduating in May 2022, aspiring to be a software engineer! I have
             strong interest in web development, mobile app development and UI/UX
             design. I am currently looking out for related full-time job and
             internship opportunities!
